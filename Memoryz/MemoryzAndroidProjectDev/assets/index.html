@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<title>Memoryz</title>
+</head>
+<body>
+	<script>
+		function() getUserData() {
+
+			var userName = $("#userName").val();
+			var password = $("#password").val();
+			android.registData(userName + "," + password);
+		}
+	</script>
+	<div >
+		<label>名前</label>
+		<input type="text" id="userName" name="user_name"/>
+		</br>
+		<label>パスワード</label>
+		<input type="text" id="password" name="password"/>
+	</div>
+	<div>
+		<input type="button" name="regist" value="登録"" onclick="getUserData();"/>
+	</div>
+</body>
+</html>
